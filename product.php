@@ -30,7 +30,6 @@ $comments = mysqli_fetch_all($comments);
 </form>
 
 <hr>
-
 <h2>Comments</h2>
 <ul>
     <?php foreach ($comments as $comment) { ?>
