@@ -34,6 +34,8 @@ $comments = mysqli_fetch_all($comments);
     <?php foreach ($comments as $comment) { ?>
         <li><?= $comment[2] ?></li>
     <?php } ?>
+
+
 </ul>
 </body>
 </html>
