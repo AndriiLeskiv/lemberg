@@ -2,12 +2,11 @@
 require_once 'config/db.php';
 
 $product_id = $_GET['id'];
-$product = mysqli_query($connect, "select * from product where id = '$product_id'");
+$product = mysqli_query($connect, "select * from product where id = $product_id");
 $product = mysqli_fetch_assoc($product);
 
-$comments = mysqli_query($connect, "select * from coments where product_id = '$product_id'");
+$comments = mysqli_query($connect, "select * from coments where product_id = $product_id");
 $comments = mysqli_fetch_all($comments);
-
 ?>
 
 <!doctype html>
